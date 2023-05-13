@@ -3,7 +3,7 @@ const data = require('../data/zoo_data');
 const countAnimals = (animal) => {
   if (!animal) {
     const animals = {};
-    data.species.forEach((specie) => { animals[specie.name] = specie.popularity; });
+    data.species.forEach((specie) => { animals[specie.name] = specie.residents.length; });
 
     return animals;
   }
