@@ -1,6 +1,6 @@
 const data = require('../data/zoo_data');
 
-const countAnimals = (...animal) => {
+const countAnimals = (animal) => {
   if (!animal) {
     const animals = {};
     data.species.forEach((specie) => { animals[specie.name] = specie.popularity; });
