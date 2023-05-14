@@ -9,9 +9,8 @@ const getRelatedEmployees = (managerId) => {
     throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
   } else {
     data.employees.reduce((acc, curr) =>
-      (curr.managers === managerId ? `${curr.firstName} ${curr.lastName}` : acc), []);
+      (curr.managers === managerId ? acc.push(`${curr.firstName} ${curr.lastName}`) : acc), []);
   }
 };
-getRelatedEmployees();
 
 module.exports = { isManager, getRelatedEmployees };
