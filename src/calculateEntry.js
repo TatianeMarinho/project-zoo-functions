@@ -22,7 +22,7 @@ const calculateEntry = (entrants) => {
   const { child, adult, senior } = countEntrants(entrants);
   const total = (child * data.prices.child) + (adult * data.prices.adult)
   + (senior * data.prices.senior);
-  return total;
+  return parseFloat(total.toFixed(2));
 };
 
 module.exports = { calculateEntry, countEntrants };

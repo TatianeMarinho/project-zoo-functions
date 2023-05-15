@@ -13,6 +13,10 @@ describe('Testes da função HandlerElephants', () => {
     expect(handlerElephants(1)).toBe('Parâmetro inválido, é necessário uma string');
   });
 
+  it('Retornar null quando recebe como parâmetro uma string inválida ', () => {
+    expect(handlerElephants('bichos')).toBeNull();
+  });
+
   it('Retorna a quantidade de elefantes', () => {
     expect(handlerElephants('count')).toEqual(4);
   });
