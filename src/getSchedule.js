@@ -11,7 +11,7 @@ const days = (test) => {
 };
 
 const objectDays = (test) => {
-  const officeHour = data.hours.
+  /* const officeHour = data.hours.
   
   let object = {
     officeHour: `Open from ${officeHour.open} until ${officeHour.close}`,
@@ -21,7 +21,7 @@ const objectDays = (test) => {
   data.species.forEach((element) => {
     (element.availability === test) ? object.exhibittion += element.name : object;
   })
-  return object;
+  return object; */
 };
 console.log(objectDays('sunday'));
 
